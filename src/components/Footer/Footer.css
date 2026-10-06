@@ -1,0 +1,1088 @@
+.footer {
+  --footer-text: #69717d;
+  --footer-black: #090d12;
+  --footer-blue: #4cb6ed;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  color: var(--footer-text);
+
+  isolation: isolate;
+}
+
+/* ========================================
+   BACKGROUND
+======================================== */
+
+.footer-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+
+  background-image: url("/images/footer-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+}
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(100% - 80px, 1440px);
+  margin: 0 auto;
+}
+
+/* ========================================
+   NEWSLETTER
+======================================== */
+
+.footer-newsletter {
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 0 50px;
+}
+
+.footer-newsletter-content {
+  width: 58%;
+  max-width: 790px;
+}
+
+.footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(20, 30, 40, 0.13);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  color: #111820;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-badge-dot {
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: #4db8ed;
+}
+
+.footer-title {
+  margin: 20px 0 8px;
+
+  color: #080d13;
+
+  font-size: clamp(52px, 5.6vw, 92px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -4px;
+}
+
+.footer-title span {
+  color: #4bb8ed;
+}
+
+.footer-description {
+  margin: 0;
+
+  color: #69717d;
+
+  font-size: clamp(16px, 1.15vw, 20px);
+  line-height: 1.55;
+}
+
+/* ========================================
+   SUBSCRIBE
+======================================== */
+
+.footer-subscribe {
+  width: min(100%, 750px);
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 26px;
+  padding: 7px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 15px 35px rgba(90, 110, 130, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.footer-input-wrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding-left: 20px;
+}
+
+.footer-input-wrapper svg {
+  width: 23px;
+  height: 23px;
+
+  color: #101820;
+
+  fill: none;
+  stroke: currentColor;
+}
+
+.footer-input-wrapper input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #111820;
+
+  font: inherit;
+  font-size: 16px;
+}
+
+.footer-input-wrapper input::placeholder {
+  color: #7d8490;
+}
+
+.footer-subscribe button {
+  min-width: 215px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 17px 25px;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: #080d13;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.footer-subscribe button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-subscribe button:hover {
+  transform: translateX(3px);
+  background: #171d24;
+}
+
+/* ========================================
+   BENEFITS
+======================================== */
+
+.footer-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .footer-benefit {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #000;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+
+.footer-benefit svg {
+  width: 25px;
+  height: 25px;
+
+  color: #111820;
+}
+
+/* ========================================
+   MAIN FOOTER
+======================================== */
+
+.footer-main {
+  display: grid;
+
+  grid-template-columns:
+    1.45fr
+    0.9fr
+    0.9fr
+    0.9fr
+    0.95fr;
+
+  gap: 50px;
+
+  padding: 55px 0 35px;
+}
+
+/* ========================================
+   BRAND
+======================================== */
+
+.footer-logo {
+  color: #080d13;
+
+  font-size: 34px;
+  font-weight: 950;
+  line-height: 1;
+
+  letter-spacing: -1.5px;
+}
+
+.footer-logo span {
+  color: #4bb8ed;
+}
+
+.footer-brand p {
+  margin: 18px 0 25px;
+
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* ========================================
+   SOCIAL
+======================================== */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-social {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(177, 226, 249, 0.75);
+
+  color: #0b1117;
+
+  transition: background 0.3s ease;
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: currentColor;
+
+  transition: transform 0.3s ease;
+}
+
+.footer-social:hover {
+  background: #a7def7;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+.footer-links h3 {
+  margin: 0 0 22px;
+
+  color: #111820;
+
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.footer-links nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  width: fit-content;
+
+  color: #69717d;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #111820;
+  transform: translateX(4px);
+}
+
+/* ========================================
+   MORE THAN HOODIES
+======================================== */
+
+.footer-more {
+  min-height: 175px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 35px;
+
+  border-left: 1px solid rgba(80, 90, 100, 0.15);
+
+  color: #111820;
+
+  font-size: clamp(28px, 2.5vw, 43px);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -1px;
+
+  transform: rotate(-3deg);
+}
+
+.footer-more-line {
+  width: 80px;
+  height: 3px;
+
+  margin-top: 10px;
+  margin-left: 50px;
+
+  border-radius: 50%;
+
+  background: #111820;
+
+  transform: rotate(-3deg);
+}
+
+/* ========================================
+   BOTTOM
+======================================== */
+
+.footer-bottom {
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(80, 90, 100, 0.18);
+
+  font-size: 13px;
+  letter-spacing: 0.7px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-legal a {
+  color: inherit;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.footer-legal a:hover {
+  color: #111820;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+  .footer-background {
+    background-image: url("/images/footer-tablet.png");
+  }
+
+  .footer-content {
+    width: min(100% - 50px, 900px);
+  }
+
+  .footer-newsletter {
+    min-height: 650px;
+  }
+
+  .footer-newsletter-content {
+    width: 60%;
+  }
+
+  .footer-title {
+    font-size: clamp(48px, 7vw, 75px);
+  }
+
+  .footer-description br {
+    display: none;
+  }
+
+  .footer-benefits {
+    gap: 25px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .footer-more {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .footer-background {
+    background-image: url("/images/footer-mobile.png");
+
+    background-position: center top;
+    background-size: 100% 100%;
+  }
+
+  .footer-content {
+    width: calc(100% - 32px);
+  }
+
+  .footer-newsletter {
+    min-height: 680px;
+
+    align-items: flex-start;
+
+    padding-top: 100px;
+  }
+
+  .footer-newsletter-content {
+    width: 100%;
+  }
+
+  .footer-badge {
+    padding: 8px 13px;
+
+    font-size: 11px;
+  }
+
+  .footer-title {
+    margin-top: 18px;
+
+    font-size: clamp(43px, 13vw, 62px);
+    letter-spacing: -2.5px;
+  }
+
+  .footer-description {
+    font-size: 15px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .footer-subscribe {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 7px;
+
+    padding: 7px;
+
+    border-radius: 25px;
+  }
+
+  .footer-input-wrapper {
+    min-height: 55px;
+
+    padding: 0 15px;
+  }
+
+  .footer-subscribe button {
+    width: 100%;
+    min-width: 0;
+
+    padding: 15px;
+  }
+
+  .footer-benefits {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-top: 22px;
+  }
+
+  .footer-benefit {
+    font-size: 14px;
+  }
+
+  .footer-main {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px 25px;
+
+    padding-top: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-logo {
+    font-size: 30px;
+  }
+
+  .footer-links h3 {
+    margin-bottom: 16px;
+  }
+
+  .footer-links nav {
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-more {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 20px 0;
+  }
+
+  .footer-legal {
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    font-size: 11px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+.footer-mobile-accordions {
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  .footer-background {
+    background-image: url("/images/footer-mobile.png");
+    background-position: center top;
+    background-size: 100% 100%;
+  }
+
+  .footer-content {
+    width: calc(100% - 32px);
+  }
+
+  /* ================= NEWSLETTER ================= */
+
+  .footer-newsletter {
+    min-height: 100px;
+
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 100px;
+  }
+
+  .footer-newsletter-content {
+    width: 100%;
+  }
+
+  .footer-badge {
+    padding: 9px 16px;
+
+    font-size: 12px;
+  }
+
+  .footer-title {
+    margin: 24px 0 20px;
+
+    font-size: clamp(47px, 13vw, 66px);
+
+    line-height: 0.92;
+
+    letter-spacing: -3px;
+  }
+
+  .footer-description {
+    max-width: 390px;
+
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  /* ================= INPUT ================= */
+
+  .footer-subscribe {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 7px;
+
+    margin-top: 30px;
+
+    padding: 7px;
+
+    border-radius: 28px;
+  }
+
+  .footer-input-wrapper {
+    min-height: 57px;
+
+    padding: 0 15px;
+
+    gap: 14px;
+  }
+
+  .footer-input-wrapper svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-input-wrapper input {
+    font-size: 17px;
+  }
+
+  .footer-subscribe button {
+    width: 100%;
+
+    min-height: 55px;
+
+    padding: 15px;
+
+    font-size: 14px;
+  }
+
+  /* ================= BENEFITS ================= */
+
+.footer-benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  gap: 8px;
+
+  margin-top: 30px;
+}
+
+.footer-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  color: #000;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.footer-benefit svg {
+  width: 22px;
+  height: 22px;
+
+  flex-shrink: 0;
+
+  stroke: #000;
+  color: #000;
+}
+
+.footer-logo {
+  color: #000;
+  
+}
+
+.footer-logo span {
+  color: #28a9ef;
+}
+
+.footer-brand p {
+  color: #000;
+}
+
+  /* ================= MAIN ================= */
+
+  .footer-main {
+    display: block;
+
+    padding: 50px 0 0;
+  }
+
+  /* ================= BRAND ================= */
+
+ .footer-brand {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+  .footer-logo {
+  color: #000;
+
+  font-size: 40px;
+  letter-spacing: -2px;
+
+  text-align: center;
+}
+
+  .footer-brand p {
+  margin-top: 20px;
+
+  color: #000;
+
+  font-size: 18px;
+  line-height: 1.55;
+
+  text-align: center;
+}
+
+  /* ================= SOCIAL ================= */
+
+  .footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+  .footer-social {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-social svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  /* ================= MORE THAN HOODIES ================= */
+
+  .footer-more {
+  display: none;
+}
+
+  .footer-more-line {
+    width: 90px;
+
+    height: 3px;
+
+    margin-top: 12px;
+    margin-left: 45px;
+  }
+
+  /* ================= HIDE DESKTOP LINKS ================= */
+
+  .desktop-footer-column {
+    display: none;
+  }
+
+  /* ================= ACCORDIONS ================= */
+
+  .footer-mobile-accordions {
+    display: block;
+
+    width: 100%;
+
+    border-top: 1px solid rgba(80, 90, 100, 0.18);
+  }
+
+  .footer-mobile-accordion {
+    width: 100%;
+
+    border-bottom: 1px solid rgba(80, 90, 100, 0.18);
+  }
+
+  .footer-accordion-header {
+    width: 100%;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #111820;
+
+    cursor: pointer;
+
+    font: inherit;
+    font-size: 20px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-align: left;
+  }
+
+  .footer-chevron {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+    stroke: #080d13;
+
+    stroke-width: 2.5;
+
+    transition: transform 0.35s ease;
+  }
+
+  .footer-chevron.is-open {
+    transform: rotate(180deg);
+  }
+
+  .footer-accordion-content {
+    height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+  }
+
+  .footer-accordion-content nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 0 0 22px;
+  }
+
+  .footer-accordion-content a {
+    color: #69717d;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: color 0.25s ease;
+  }
+
+  .footer-accordion-content a:hover {
+    color: #111820;
+  }
+
+  /* ================= BOTTOM ================= */
+
+  .footer-bottom {
+    min-height: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 30px 0 40px;
+
+    border-top: 0;
+
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+  }
+
+  .footer-legal {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+  .footer-content {
+    width: calc(100% - 24px);
+  }
+
+  .footer-newsletter {
+    min-height: 780px;
+
+    padding-top: 85px;
+  }
+
+  .footer-title {
+    font-size: 44px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .footer-description {
+    font-size: 15px;
+  }
+
+  .footer-benefit {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    font-size: 34px;
+  }
+
+  .footer-brand p {
+    font-size: 16px;
+  }
+
+  .footer-social {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-more {
+    font-size: 34px;
+  }
+
+  .footer-accordion-header {
+    min-height: 65px;
+
+    font-size: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .footer-legal {
+    font-size: 13px;
+  }
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer *,
+  .footer *::before,
+  .footer *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
